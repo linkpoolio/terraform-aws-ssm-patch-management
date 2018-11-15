@@ -42,7 +42,7 @@ variable "rejected_patches" {
 variable "product_versions" {
   description = "The list of product versions for the SSM baseline"
   type        = "list"
-  default     = ["WindowsServer2016", "WindowsServer2012R2"]
+  default     = ["AmazonLinux2018.03"]
 }
 
 variable "patch_classification" {
@@ -60,7 +60,7 @@ variable "patch_severity" {
 variable "operating_system" {
   description = "The operating system for the SSM baseline"
   type        = "string"
-  default     = "AMAZON_LINUX_2"
+  default     = "AMAZON_LINUX"
 }
 
 ## Maintenance window vars
