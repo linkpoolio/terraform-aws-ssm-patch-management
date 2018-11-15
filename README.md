@@ -1,7 +1,7 @@
 tf-aws-ssm-patch-mgmt
 -----
 
-This module should be used to patch EC2 instances based on a schedule.
+This module should be used to patch Linux instances based on a schedule.
 
 The schedule must be in cron or rate format, for example by default the patch scan schedule occurs on a Wednesday 6PM, the patch install schedule occurs at 9PM. For further information on these formats please see the AWS user docs <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html" _target="blank">here</a>.
 
