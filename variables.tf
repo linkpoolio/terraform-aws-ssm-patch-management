@@ -48,7 +48,7 @@ variable "product_versions" {
 variable "patch_classification" {
   description = "The list of patch classifications for the SSM baseline"
   type        = "list"
-  default     = ["CriticalUpdates", "SecurityUpdates"]
+  default     = ["Security", "Bugfix"]
 }
 
 variable "patch_severity" {
