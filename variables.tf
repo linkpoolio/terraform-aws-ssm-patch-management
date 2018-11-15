@@ -17,7 +17,7 @@ variable "envtype" {
 variable "profile" {
   description = "This label will be added to the SSM baseline description"
   type        = "string"
-  default     = "Windows"
+  default     = "Amazon Linux"
 }
 
 variable "aws_region" {
