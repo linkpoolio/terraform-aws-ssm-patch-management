@@ -17,6 +17,11 @@ resource "aws_ssm_patch_baseline" "baseline" {
       key    = "CLASSIFICATION"
       values = ["${var.patch_classification}"]
     }
+
+    patch_filter {
+      key    = "SEVERITY"
+      values = ["${var.patch_severity}"]
+    }
   }
 }
 
