@@ -3,6 +3,7 @@ resource "aws_ssm_patch_baseline" "baseline" {
   description      = "${var.profile} patch baseline"
   approved_patches = ["${var.approved_patches}"]
   rejected_patches = ["${var.rejected_patches}"]
+  operating_system = "${var.operating_system}"
 
   approval_rule {
     approve_after_days = 7
